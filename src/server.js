@@ -12,7 +12,11 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+  origin: 'http://milkyway-demo-s3.s3-website-us-east-1.amazonaws.com',
+  credentials: true,
+}));
+
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

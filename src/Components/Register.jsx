@@ -41,7 +41,7 @@ export default function Login() {
     console.log(Username, Password)
     try {
       // Send data to backend using a secure method (e.g., POST)
-      const response = await fetch('http://localhost:8080/api/register', {
+      const response = await fetch('http://52.201.212.249:8080/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }, // Set appropriate headers
         body: JSON.stringify(userCredentials) // Send data in JSON format

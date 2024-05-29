@@ -4,14 +4,18 @@ var app = express();
 const cors = require('cors');
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+    origin: 'http://milkyway-demo-s3.s3-website-us-east-1.amazonaws.com',
+    credentials: true,
+  }));
+  
 app.use(express.json());
 
 const config = {
-    server: 'NNCMILKYWAY\\SQLEXPRESS06',
+    server: 'demo.c3wmusagggqn.us-east-1.rds.amazonaws.com',
     database: 'Northwind',
     user: 'sa',
-    password: 'milkyway',
+    password: 'Password',
     encrypt: false,
     trustServerCertificate: false,
 };

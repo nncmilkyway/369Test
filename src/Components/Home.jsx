@@ -15,7 +15,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8080/api/products')
+    fetch('http://52.201.212.249:8080/api/products')
       .then((Response) => Response.json())
       .then((findresponse) => {
         this.setState({
