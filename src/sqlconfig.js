@@ -4,11 +4,7 @@ var app = express();
 const cors = require('cors');
 
 // Enable CORS
-app.use(cors({
-    origin: 'http://milkyway-demo-s3.s3-website-us-east-1.amazonaws.com',
-    credentials: true,
-  }));
-  
+app.use(cors());
 app.use(express.json());
 
 const config = {

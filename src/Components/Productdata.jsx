@@ -16,7 +16,7 @@ const ProductDetail = () => {
     // Fetch product details based on the productId
     const fetchProductDetail = async () => {
       try {
-        const response = await fetch(`http://52.201.212.249:8080/api/products/${productId}`);
+        const response = await fetch(`http://18.212.99.2:8080/api/products/${productId}`);
         if (!response.ok) {
           throw new Error(`HTTP error: Status ${response.status}`);
         }
